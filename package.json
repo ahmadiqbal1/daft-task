@@ -1,0 +1,16 @@
+{
+  "name": "daftie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run --config viewportWidth=1000,viewportHeight=660",
+    "headTest": "npm run test -- --headed -- --window-size=1000,660",
+    "chromeTest": "npm run test -- --browser chrome -- --window-size=1000,660"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
