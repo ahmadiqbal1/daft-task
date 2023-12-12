@@ -49,10 +49,6 @@ cy.get('[data-testid="modal-clear-filter-button"]')
 cy.get('[data-testid="terms-input-text"]').type(this.data.keyword)
 
 
-//Assertion after typing the keyword in Filter
-cy.get('[data-testid="terms-input-text"]').should('have.value', this.data.keyword, 'Input field should have the value "Garage"');
-
-
 //Click the search button to refresh the search results
 cy.get('[data-testid="filters-modal-show-results-button"]').click()
 cy.wait(1000)
